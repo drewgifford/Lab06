@@ -103,7 +103,7 @@ shared_ptr<Node<T>> Tree<T>::insert(shared_ptr<Node<T>> node, T item){
         node->left = insert(node->left, item);
     }
     // Set the right node to its new value should it need one
-    else if(item > node->getValue()) {
+    else if(item >= node->getValue()) {
         node->right = insert(node->right, item);
     }
 

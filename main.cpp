@@ -9,14 +9,14 @@ int main(){
 
     Tree<string> bst;
 
-    bst.insert("Star Trek");
-    bst.insert("Star Wars");
-    bst.insert("Space Balls");
-    bst.insert("Galaxy Quest");
+    bst.insert("Halloween");
+    bst.insert("A Nightmare on Elm Street");
+    bst.insert("Hocus Pocus");
+    bst.insert("Beetlejuice");
 
     int size = bst.size();
 
-    cout << "Size: " << size << endl;
+    cout << "GetAllAscending: " << size << endl;
 
 
     vector<string> values = bst.getAllAscending();
